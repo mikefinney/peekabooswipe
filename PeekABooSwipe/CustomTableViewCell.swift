@@ -20,6 +20,8 @@ class CustomTableViewCell: UITableViewCell {
             animations: {
                 self.contentView.transform = CGAffineTransform(translationX: 1000, y: 0)
                 self.backgroundColor = UIColor.green
+        }, completion: { _ in
+            self.contentView.transform = .identity
         })
 
         
