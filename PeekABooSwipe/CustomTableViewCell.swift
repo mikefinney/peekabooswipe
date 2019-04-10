@@ -11,7 +11,7 @@ class CustomTableViewCell: UITableViewCell {
 
 //        self.contentView.translatesAutoresizingMaskIntoConstraints = false
 
-        self.contentView.transform = CGAffineTransform(translationX: 0, y: 0)
+        self.contentView.transform = .identity
 
         UIView.animate(
             withDuration: 1,
